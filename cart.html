@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- * MAIN CSS -->
+    <link rel="stylesheet" href="src/css/output.css">
+
+    <!-- * TITTLE -->
+    <title>Document</title>
+
+    <!-- * GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- TODO EDIT HERE BEB -->
+    <!-- cek -->
+    <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+        <div class="px-8 py-3 lg:px-5 lg:pl-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center justify-start rtl:justify-end">
+                    <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar"
+                        aria-controls="logo-sidebar" type="button"
+                        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                        <span class="sr-only">Open sidebar</span>
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" fill-rule="evenodd"
+                                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+                            </path>
+                        </svg>
+                    </button>
+                    <a href="https://flowbite.com" class="flex ms-2 md:me-24">
+                        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
+                        <span
+                            class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Flowbite</span>
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <a href="" class="px-4">
+                        <ion-icon class="w-7 h-7 text-gray-400 hover:text-peach-500" name="cart-outline"></ion-icon>
+                    </a>
+                    <div class="flex items-center ms-3">
+                        <div>
+                            <button type="button"
+                                class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                                aria-expanded="false" data-dropdown-toggle="dropdown-user">
+                                <span class="sr-only">Open user menu</span>
+                                <img class="w-8 h-8 rounded-full"
+                                    src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                                    alt="user photo">
+                            </button>
+                        </div>
+                        <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600"
+                            id="dropdown-user">
+                            <div class="px-4 py-3" role="none">
+                                <p class="text-sm text-gray-900 dark:text-white" role="none">
+                                    Neil Sims
+                                </p>
+                                <p class="text-sm font-medium text-gray-900 truncate dark:text-gray-300" role="none">
+                                    neil.sims@flowbite.com
+                                </p>
+                            </div>
+                            <ul class="py-1" role="none">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                                        role="menuitem">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                                        role="menuitem">Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                                        role="menuitem">Earnings</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white"
+                                        role="menuitem">Sign out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="main">
+        <section id="cart">
+            <div class="container">
+                <div class="pt-20">
+                    <div class="p-4 rounded-lg mt-14">
+                        <div class="flex w-full items-center justify-between">
+                            <ol aria-label="Breadcrumb"
+                                class="hidden min-w-0 items-center gap-2 whitespace-nowrap md:flex px-4">
+                                <li class="text-sm">
+                                    <a href="menu-list.html"
+                                        class="flex items-center gap-2 align-middle text-black transition-all hover:text-peach-500">
+                                        Menu
+                                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m9 5 7 7-7 7" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li aria-current="page"
+                                    class="truncate text-sm font-medium text-peach-500 hover:text-primary-500">
+                                    List Menu
+                                </li>
+                            </ol>
+                        </div>
+
+                        <div class="grid grid-cols-1 pt-5">
+                            <div class="rounded-lg">
+                                <div class="grid grid-cols-1 xl:grid-cols-3 gap-4 mb-4">
+                                    <div class="xl:col-span-2 w-full overflow-hidden border border-gray-200 rounded-lg">
+                                        <h4 class="text-lg text-gray-600 font-medium px-6 py-4">Menu</h4>
+                                        <table class=" divide-y w-full divide-peach-100 text-left">
+                                            <thead class="bg-gray-100 font-bold text-xl">
+                                                <th
+                                                    class="whitespaces-nowrap px-6 py-2 text-sm font-medium text-gray-400">
+                                                    Products</th>
+                                                <th
+                                                    class="whitespaces-nowrap px-6 py-2 text-sm font-medium text-gray-400">
+                                                    Price</th>
+                                                <th
+                                                    class="whitespaces-nowrap px-6 py-2 text-sm font-medium text-gray-400">
+                                                    Quantity</th>
+                                                <th
+                                                    class="whitespaces-nowrap px-6 py-2 text-sm font-medium text-gray-400">
+                                                    Sub-Total</th>
+                                            <tbody class="divide-y divide-peach-100 justify-center items-center">
+                                                <tr class="hover:bg-peach-100">
+                                                    <td
+                                                        class="whitespace-nowrap flex items-center justify-start px-6 py-4 gap-x-4 text-sm mx-auto font-medium text-peach-900">
+                                                        <button
+                                                            class="w-7 h-7 flex justify-center items-center border border-gray-500 text-gray-500 rounded-full">
+                                                            <ion-icon name="close-outline"></ion-icon>
+                                                        </button>
+                                                        <div class="h-20 w-20 shrink">
+                                                            <img src="src/image/apples-roll.jpg" alt="Apples Roll"
+                                                                class="h-full w-full object-cover rounded">
+                                                        </div>
+                                                        Apples Roll
+                                                    </td>
+                                                    <td
+                                                        class="whitespace-nowrap px-6 py-4 text-sm font-medium text-black">
+                                                        Rp. 20000
+                                                    </td>
+                                                    <td
+                                                        class="whitespace-nowrap px-6 py-4 text-sm font-medium text-black">
+                                                        <div class="flex flex-row items-center space-x-3">
+                                                            <button onclick="decreaseQuantity()"
+                                                                class="flex items-center justify-center p-2 duration-300 border-2 rounded-full border-peach-500 text-peach-500 hover:bg-peach-500 hover:text-white">
+                                                                <ion-icon name="remove-outline"></ion-icon>
+                                                            </button>
+                                                            <span id="quantity" class="text-gray-500">0</span>
+                                                            <button onclick="increaseQuantity()"
+                                                                class="flex items-center justify-center p-2 duration-300 border-2 rounded-full border-peach-500 text-peach-500 hover:bg-peach-500 hover:text-white">
+                                                                <ion-icon name="add-outline"></ion-icon>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="whitespace-nowrap px-6 py-4 text-sm font-medium text-black">
+                                                        Rp 22.000</td>
+                                                </tr>
+                                                <tr class="hover:bg-peach-100">
+                                                    <td
+                                                        class="whitespace-nowrap flex items-center justify-start px-6 py-4 gap-x-4 text-sm mx-auto font-medium text-peach-900">
+                                                        <button
+                                                            class="w-7 h-7 flex justify-center items-center border border-gray-500 text-gray-500 rounded-full">
+                                                            <ion-icon name="close-outline"></ion-icon>
+                                                        </button>
+                                                        <div class="h-20 w-20 shrink">
+                                                            <img src="src/image/apples-roll.jpg" alt="Apples Roll"
+                                                                class="h-full w-full object-cover rounded">
+                                                        </div>
+                                                        Apples Roll
+                                                    </td>
+                                                    <td
+                                                        class="whitespace-nowrap px-6 py-4 text-sm font-medium text-black">
+                                                        Rp. 20000
+                                                    </td>
+                                                    <td
+                                                        class="whitespace-nowrap px-6 py-4 text-sm font-medium text-black">
+                                                        <div class="flex flex-row items-center space-x-3">
+                                                            <button onclick="decreaseQuantity()"
+                                                                class="flex items-center justify-center p-2 duration-300 border-2 rounded-full border-peach-500 text-peach-500 hover:bg-peach-500 hover:text-white">
+                                                                <ion-icon name="remove-outline"></ion-icon>
+                                                            </button>
+                                                            <span id="quantity" class="text-gray-500">0</span>
+                                                            <button onclick="increaseQuantity()"
+                                                                class="flex items-center justify-center p-2 duration-300 border-2 rounded-full border-peach-500 text-peach-500 hover:bg-peach-500 hover:text-white">
+                                                                <ion-icon name="add-outline"></ion-icon>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="whitespace-nowrap px-6 py-4 text-sm font-medium text-black">
+                                                        Rp 22.000</td>
+                                                </tr>
+                                                <tr class="hover:bg-peach-100">
+                                                    <td
+                                                        class="whitespace-nowrap flex items-center justify-start px-6 py-4 gap-x-4 text-sm mx-auto font-medium text-peach-900">
+                                                        <button
+                                                            class="w-7 h-7 flex justify-center items-center border border-gray-500 text-gray-500 rounded-full">
+                                                            <ion-icon name="close-outline"></ion-icon>
+                                                        </button>
+                                                        <div class="h-20 w-20 shrink">
+                                                            <img src="src/image/apples-roll.jpg" alt="Apples Roll"
+                                                                class="h-full w-full object-cover rounded">
+                                                        </div>
+                                                        Apples Roll
+                                                    </td>
+                                                    <td
+                                                        class="whitespace-nowrap px-6 py-4 text-sm font-medium text-black">
+                                                        Rp. 20000
+                                                    </td>
+                                                    <td
+                                                        class="whitespace-nowrap px-6 py-4 text-sm font-medium text-black">
+                                                        <div class="flex flex-row items-center space-x-3">
+                                                            <button onclick="decreaseQuantity()"
+                                                                class="flex items-center justify-center p-2 duration-300 border-2 rounded-full border-peach-500 text-peach-500 hover:bg-peach-500 hover:text-white">
+                                                                <ion-icon name="remove-outline"></ion-icon>
+                                                            </button>
+                                                            <span id="quantity" class="text-gray-500">0</span>
+                                                            <button onclick="increaseQuantity()"
+                                                                class="flex items-center justify-center p-2 duration-300 border-2 rounded-full border-peach-500 text-peach-500 hover:bg-peach-500 hover:text-white">
+                                                                <ion-icon name="add-outline"></ion-icon>
+                                                            </button>
+                                                        </div>
+                                                    </td>
+                                                    <td
+                                                        class="whitespace-nowrap px-6 py-4 text-sm font-medium text-black">
+                                                        Rp 22.000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        class="whitespace-nowrap px-6 py-6 text-sm font-medium text-black">
+                                                        <a href="#"
+                                                            class="border border-peach-500 text-peach-500 px-6 py-3 rounded-md hover:bg-peach-500 hover:text-white duration-300">Shop
+                                                            More</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="xl:col-span-1 border border-gray-200 rounded-lg px-6 py-4 h-fit">
+                                        <h3 class="text-lg pb-6">Cart Total</h3>
+                                        <div class="flex justify-between border-b border-gray-400 py-4">
+                                            <span class="">Sub Total</span>
+                                            <span class="text-gray-500">Rp. 200000</span>
+                                        </div>
+                                        <div class="flex justify-between py-2.5">
+                                            <span class="">Total</span>
+                                            <span class="text-gray-500">Rp. 200000</span>
+                                        </div>
+                                        <a href="#"
+                                            class="border flex justify-center items-center bg-peach-500 text-white my-4 py-2 rounded-md hover:bg-peach-600 duration-300">Shop
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+
+
+
+    <!-- TODO EDIT HERE BEB END -->
+
+    <!-- * IONICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- * SCRIPT LOCAL -->
+    <script src="src/js/script.js"></script>
+
+    <!-- * FLOWBITE -->
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>
